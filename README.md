@@ -1,37 +1,53 @@
-### 3 分钟了解如何进入开发
+## 项目地址
 
-欢迎使用云效 Codeup，通过阅读以下内容，你可以快速熟悉 Codeup ，并立即开始今天的工作。
+- http://120.78.169.146/
 
-### 提交**文件**
+## 介绍
 
-首先，你需要了解在 Codeup 中如何提交代码文件，跟着文档「[__提交第一行代码__](https://thoughts.aliyun.com/sharespace/5e8c37eb546fd9001aee8242/docs/5e8c37e7546fd9001aee81fd)」一起操作试试看吧。
+`bbs-go`是一个使用Go语言搭建的开源社区系统，采用前后端分离技术，Go语言提供api进行数据支撑，用户界面使用Nuxt.js进行渲染，后台界面基于element-ui。如果你正在学习Go语言，或者考虑转Go语言的Phper/Javaer...那么该项目对你有的学习会有很大的帮助，欢迎一起来交流。
 
-### 开启扫描
+![bbs-go功能简介](https://i.loli.net/2021/11/12/OxTBib2pGcV8jzU.png)
 
-开发过程中，为了更好的管理你的代码资产，Codeup 内置了「[__代码规约扫描__](https://thoughts.aliyun.com/sharespace/5e8c37eb546fd9001aee8242/docs/5e8c37e8546fd9001aee821c)」和「[__敏感信息检测__](https://thoughts.aliyun.com/sharespace/5e8c37eb546fd9001aee8242/docs/5e8c37e8546fd9001aee821b)」服务，你可以在代码库设置-集成与服务中一键开启，开启后提交或合并请求的变更将自动触发扫描，并及时提供结果反馈。
+## 模块
 
-![](https://img.alicdn.com/tfs/TB1nRDatoz1gK0jSZLeXXb9kVXa-1122-380.png "")
+### server
 
-![](https://img.alicdn.com/tfs/TB1PrPatXY7gK0jSZKzXXaikpXa-1122-709.png "")
+[![bbs-go-server](https://github.com/mlogclub/bbs-go/actions/workflows/bbs-go-server.yml/badge.svg)](https://github.com/mlogclub/bbs-go/actions/workflows/bbs-go-server.yml)
 
-### 代码评审
+> 基于`Golang`搭建，提供接口数据支撑。
 
-功能开发完毕后，通常你需要发起「[__代码合并和评审__](https://thoughts.aliyun.com/sharespace/5e8c37eb546fd9001aee8242/docs/5e8c37e8546fd9001aee8216)」，Codeup 支持多人协作的代码评审服务，你可以通过「[__保护分支__](https://thoughts.aliyun.com/sharespace/5e8c37eb546fd9001aee8242/docs/5e8c37e9546fd9001aee8221)」策略及「[__合并请求设置__](https://thoughts.aliyun.com/sharespace/5e8c37eb546fd9001aee8242/docs/5e8c37e9546fd9001aee8224)」对合并过程进行流程化管控，同时提供 WebIDE 在线代码评审及冲突解决能力，让你的评审过程更加流畅。
+*技术栈*
+- iris ([https://github.com/kataras/iris](https://github.com/kataras/iris)) Go语言 mvc 框架
+- gorm ([http://gorm.io/](http://gorm.io/)) 最好用的Go语言数据库orm框架
+- resty ([https://github.com/go-resty/resty](https://github.com/go-resty/resty)) Go语言好用的 http-client
+- cron ([https://github.com/robfig/cron](https://github.com/robfig/cron)) 定时任务框架
+- goquery ([https://github.com/PuerkitoBio/goquery](https://github.com/PuerkitoBio/goquery)) html dom 元素解析
 
-![](https://img.alicdn.com/tfs/TB1XHrctkP2gK0jSZPxXXacQpXa-1432-887.png "")
+### site
 
-![](https://img.alicdn.com/tfs/TB1V3fctoY1gK0jSZFMXXaWcVXa-1432-600.png "")
+[![bbs-go-site](https://github.com/mlogclub/bbs-go/actions/workflows/bbs-go-site.yml/badge.svg)](https://github.com/mlogclub/bbs-go/actions/workflows/bbs-go-site.yml)
 
-### 编写文档
+> 前端页面渲染服务，基于`nuxt.js`搭建。
 
-项目推进过程中，你的经验和感悟可以直接记录到 Codeup 代码库的「[__文档__](https://thoughts.aliyun.com/sharespace/5e8c37eb546fd9001aee8242/docs/5e8c37e8546fd9001aee8213)」内，让智慧可视化。
+*技术栈*
+- vue.js ([https://vuejs.org](https://vuejs.org)) 渐进式 JavaScript 框架
+- nuxt.js ([https://nuxtjs.org](https://nuxtjs.org)) 基于Vue的服务端渲染框架，效率高到爆
 
-![](https://img.alicdn.com/tfs/TB1BN2ateT2gK0jSZFvXXXnFXXa-1432-700.png "")
+### admin
 
-### 成员协作
+> 管理后台系统，基于`vue.js + element-ui`搭建。
 
-是时候邀请成员一起编写卓越的代码工程了，请点击右上角「成员」邀请你的小伙伴开始协作吧！
+*技术栈*
+- vue.js ([https://vuejs.org](https://vuejs.org)) 渐进式 JavaScript 框架
+- element-ui ([https://element.eleme.cn](https://element.eleme.cn)) 饿了么开源的基于 vue.js 的前端库
 
-### 更多
+## 功能预览
 
-Git 使用教学、高级功能指引等更多说明，参见[__Codeup帮助文档__](https://thoughts.aliyun.com/sharespace/5e8c37eb546fd9001aee8242/docs/5e8c37e6546fd9001aee81fa)。
+![首页.png](https://s2.loli.net/2022/04/12/DpvPwB9dlQ6Chef.png)
+![发帖.png](https://s2.loli.net/2022/04/12/KC8eXfE6sDLq34V.png)
+![发动态.png](https://s2.loli.net/2022/04/12/14pMPuGjEU6kiWV.png)
+![个人中心.png](https://s2.loli.net/2022/04/12/1PVNjMh9nUAXsl8.png)
+![手机版.png](https://s2.loli.net/2022/04/12/mowWb78CGIaH6T2.png)
+![后台首页.png](https://s2.loli.net/2022/04/12/ErX2BLTnh7ldz8D.png)
+![后台配置.png](https://s2.loli.net/2022/04/12/PwK6aC74XEZlIOL.png)
+

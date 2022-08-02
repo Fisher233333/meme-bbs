@@ -1,0 +1,41 @@
+@import "./topic-list";
+@import "./topic-detail";
+
+.topics-wrapper {
+  display: flex;
+
+  .topics-nav {
+    margin-right: 10px;
+  }
+
+  .topics-main {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .topics-nav {
+      display: none;
+    }
+  }
+}
+
+.topic-create-form {
+  background: var(--bg-color);
+  padding: 30px;
+
+  .tag {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-color3);
+
+    &.selected {
+      color: var(--text-color5);
+      background: var(--text-link-color);
+    }
+  }
+}
+
+
